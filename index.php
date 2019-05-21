@@ -1,9 +1,12 @@
 <?php 
-define('BIT_APP_ID','862c99450bae546f0cdc6313832f2623');
+//bandsintown API KEY
+//please ask your own at Bandsintown Support <support@bandsintown.com>
+define('BIT_APP_ID','xxxxxxx');
 
 include_once __DIR__.'/BandsInTownMerge.php';
 
 $bitm = new BandsInTownMerge(BIT_APP_ID);
+$bitm->setCacheLength(60);//minutes
 $bitm->addBand('Duo Fines Lames','Duo Fines Lames');
 $bitm->addBand('Quatuor Megamix', 'Quatuor Megamix');
 $bitm->addBand('Bande Originale - Collectif La Saugrenue','Bande Originale');

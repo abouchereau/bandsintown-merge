@@ -14,6 +14,10 @@ class BandsInTownMerge {
 		$this->appId = $appId;
 	}
 	
+	public function setCacheLength($cacheLength) {
+		$this->cacheLength = $cacheLength;
+	}
+	
 	public function setCacheFile($cacheFile) {
 		$this->cacheFile = $cacheFile;
 	}
