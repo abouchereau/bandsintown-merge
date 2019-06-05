@@ -50,7 +50,7 @@ class BandsInTownMerge {
 			$dc = new DateCustom($tab['datetime']);
 			$dates[] = [
 				$tab['datetime'],
-				$bands[$tab['lineup'][0]],
+				$this->bands[$tab['lineup'][0]],
 				$tab['venue']['name'],
 				$tab['venue']['city'],
 				$tab['venue']['latitude'],
